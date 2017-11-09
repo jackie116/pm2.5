@@ -11,7 +11,7 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
+import android.widget.Toast;
 
 
 public class webview_1 extends AppCompatActivity {
@@ -33,6 +33,9 @@ public class webview_1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview_1);
+
+
+        Toast.makeText(getApplication(), "https://env.healthinfo.tw/air/", Toast.LENGTH_SHORT).show();
 
         mWebView = (WebView)findViewById(R.id.webView);
 
@@ -62,10 +65,6 @@ public class webview_1 extends AppCompatActivity {
                 super.onGeolocationPermissionsShowPrompt(origin, callback);
             }
         });
-
-
-
-
 
 
         // 設定轉址的網頁還是由WebView開啟，不要用外部的瀏覽器。

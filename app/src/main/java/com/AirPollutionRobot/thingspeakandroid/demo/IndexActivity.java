@@ -23,6 +23,7 @@ public class IndexActivity extends AppCompatActivity {
 
         getNewThread();
 
+
         ImageButton nextPageBtn = (ImageButton)findViewById(R.id.button01);
         nextPageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,12 +33,21 @@ public class IndexActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button web_1 = (Button)findViewById(R.id.web_1);
+        Button web_1 = (Button)findViewById(R.id.btn_1);
         web_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(IndexActivity.this  , webview_1.class);
+                startActivity(intent);
+            }
+        });
+        Button btn_2 = (Button)findViewById(R.id.btn_2);
+        btn_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(IndexActivity.this  , info.class);
                 startActivity(intent);
             }
         });
