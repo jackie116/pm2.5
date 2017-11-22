@@ -52,6 +52,16 @@ public class IndexActivity extends AppCompatActivity {
             }
         });
 
+        Button btn_3 = (Button)findViewById(R.id.btn_3);
+        btn_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(IndexActivity.this  , webview_2.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 

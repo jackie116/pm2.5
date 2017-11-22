@@ -24,8 +24,14 @@
             android:name=".DemoActivity"
             android:label="PM2.5"
             android:screenOrientation="portrait" />
-        <activity android:name=".webview_1" />
-        <activity android:name=".info"></activity>
+        <activity
+            android:name=".webview_1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".info"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".webview_2"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
